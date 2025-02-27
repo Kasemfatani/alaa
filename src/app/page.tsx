@@ -15,6 +15,7 @@ export default function Home() {
       <Hero/>
       <Who/>
       <Vision/>
+      
       <Parteners/>
       <About/>
       <Services/>
