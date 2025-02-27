@@ -1,0 +1,137 @@
+.rawas-page {
+    padding: 56px 0;
+    background-color: $white;
+
+    @media screen and (max-width: 767px) {
+        padding: 20px 0;
+    }
+
+    .rawas-cont {
+        background-color: #203F39;
+        border-radius: 40px;
+        overflow: hidden;
+        position: relative;
+        padding: 40px;
+
+        @media screen and (max-width: 767px) {
+            border-radius: 20px;
+            padding: 20px 20px 70px 20px;
+        }
+
+       
+
+        .main-side {
+            width: 100%;
+            max-width: 670px;
+            
+            @media screen and (max-width: 767px) {
+                max-width: 100%;
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: 32px;
+                color: $white;
+                margin-bottom: 5px;
+                @media screen and (max-width: 767px) {
+                    font-size: 24px;
+                    
+                }
+            }
+
+            h4 {
+                font-weight: 600;
+                font-size: 24px;
+                color: $white;
+                margin-bottom: 24px;
+                @media screen and (max-width: 767px) {
+                    font-size: 16px;
+                    
+                }
+
+            }
+
+            .rawas-options {
+                display: flex;
+                padding: 33px 16px;
+                flex-direction: column;
+                gap: 8px;
+                background-color: #36524D;
+                border-radius: 10px;
+                height: 100%;
+                &:hover{
+                    background-color: $hover;
+                }
+
+                h4 {
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin-bottom: 4px;
+
+                }
+                h2{
+                    font-weight: 700;
+                    font-size: 40px;
+                    color: $main;
+                    span{
+                        font-weight: 700;
+                        font-size: 40px;
+                        color: $main;
+                    }
+                }
+                p{
+                    font-weight: 500;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    color: $white;
+
+                }
+                
+
+            }
+            a{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-radius: 11px;
+                background-color: $main;
+                color: #203F39;
+                height: 48px;
+                justify-content: center;
+                text-decoration: none;
+                padding: 0 24px;
+                width: fit-content;
+                &:hover{
+                    background-color: $hover;
+                }
+                span{
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                    color: #203F39;
+                    
+                }
+                i{
+                    color: #203F39;
+                    font-size: 16px;
+                }
+            }
+        }
+        .logo-rawas{
+            position: absolute;
+            bottom: 0;
+            inset-inline-end: 0;
+            z-index: 100;
+            &:hover{
+                opacity: 1;
+            }
+            @media screen and (max-width: 767px) {
+                opacity: .5;
+                
+            }
+        }
+    }
+}
+.swiper-slide {
+    height: auto !important;
+}
