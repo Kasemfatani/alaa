@@ -67,8 +67,7 @@ export default function Who() {
                                     className="r-side">
                                     <div className="img-cont">
                                         <div className="overlay"></div>
-                                        <Image src={data.image == "https://alaa.irfaad.com/storage/data/2/nYhTSgVlDyFzLAIviRczhqeXX3B0DJDC87bOmYVJ.png" ? img : data?.image} width={500} height={500} alt="Mazar" className="img-hero" />
-                                        {/* <Image src={data?.who_we_are.image} width={500} height={500} alt="Mazar" className="img-hero" /> */}
+                                        <Image src={data?.image} width={500} height={500} alt="Mazar" className="img-hero" />
                                     </div>
                                 </motion.div>
 

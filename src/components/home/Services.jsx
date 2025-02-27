@@ -91,7 +91,6 @@ export default function About() {
                                         >
                                             <div className="img-cont">
                                                 <Image src={item.cover} width={200} height={200} alt="Mazar"></Image>
-                                                {/* <Image src={img} width={200} height={200} alt="Mazar"></Image> */}
                                             </div>
                                             <div className="text">
                                                 <h2>{item.title}</h2>

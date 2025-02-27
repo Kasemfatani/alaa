@@ -43,7 +43,6 @@ export default function SingleService() {
     Fancybox.bind("[data-fancybox]", {
         // Your custom options
     });
-    let imgs = [img1, img2, img3,img1, img2, img3,img1, img2, img3,img1, img2, img3,img1, img2, img3,img1, img2, img3]
     return (
         <div className="SingleService" >
             {
@@ -66,8 +65,8 @@ export default function SingleService() {
                                 </div>
                             </div>
                             <div className="img-cont">
-                                {/* <Image src={data?.cover} alt="Mazar" width={200} height={200} /> */}
-                                <Image src={img2} alt="Mazar" width={200} height={200} />
+                                <Image src={data?.cover} alt="Mazar" width={200} height={200} />
+                                {/* <Image src={img2} alt="Mazar" width={200} height={200} /> */}
                             </div>
                         </div>
                         <div className="gallery">
@@ -84,17 +83,6 @@ export default function SingleService() {
                                         </BlurFade>
                                     )
                                 }
-                                {/* {
-                                    imgs.map((img, idx) =>
-                                        <BlurFade key={img.id} delay={0.25 + idx * 0.05} inView>
-                                            <a href={img.src} data-fancybox="gallery">
-                                                <figure>
-                                                    <Image src={img} alt="Mazar" width={200} height={200} className="mb-4 size-full rounded-lg object-contain" />
-                                                </figure>
-                                            </a>
-                                        </BlurFade>
-                                    )
-                                } */}
                             </div>
                         </div>
                     </div>

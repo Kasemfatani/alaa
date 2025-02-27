@@ -59,7 +59,7 @@ export default function Book() {
                                 <div className="vision-img-cont">
                                     <div className="vision-img">
                                         <figure>
-                                            <Image src={data.our_vision.image == "https://alaa.irfaad.com/storage/data/4/dYa8Qx1LlE4VhiujopxHKthGYu12bzmnBHiRKENj.png" || null ? mess1 : data.our_vision.image} width={200} height={200} alt="vision" />
+                                            <Image src={data.our_vision.image} width={200} height={200} alt="vision" />
                                         </figure>
                                     </div>
                                 </div>
@@ -80,7 +80,7 @@ export default function Book() {
                                 <div className="vision-img-cont">
                                     <div className="vision-img">
                                         <figure>
-                                            <Image src={data.our_message.image == "https://alaa.irfaad.com/storage/data/3/cXx6yleXKvNuUNnMYUyhvxpRhaEK0Igv49fUhFD4.png" || null ? mess2 : data.our_message.image} width={200} height={200} alt="vision" />
+                                            <Image src={data.our_message.image} width={200} height={200} alt="vision" />
                                         </figure>
                                     </div>
                                 </div>
