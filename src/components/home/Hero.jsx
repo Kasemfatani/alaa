@@ -91,7 +91,7 @@ export default function Hero() {
                                         <h1>{item.title}</h1>
                                         <p>{item.description}</p>
                                         <div className="links">
-                                            <Link href="/#services" className='sec-link' >تعرف علي خدماتنا </Link>
+                                            <Link href="/#services" className='sec-link' >تعرف على خدماتنا </Link>
                                         </div>
                                     </div>
                                 </SwiperSlide>
