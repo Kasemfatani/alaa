@@ -25,7 +25,7 @@ export default function Header() {
           <Link href="/"> <Image src={logo} alt="logo" className="logo-img" /></Link>
           <div className="links">
             <Link href="/">الرئيسية</Link>
-            <Link href="/#about">أعرف عنا</Link>
+            <Link href="/#about">اعرف عنا</Link>
             <Link href="/#services">خدماتنا </Link>
             <Link href="/#contact" className='book-link' >تواصل معنا </Link>
           </div>

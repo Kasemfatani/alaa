@@ -41,7 +41,8 @@ export default function About() {
     return (
         <div className="about" >
             <div className="container m-auto" id='services'>
-                <h2>كيف يمكننا مساعدتك..؟</h2>
+                <h2>خدماتنا ..</h2>
+                <h3>جاهزون لخدمتك... تواصل معنا ودعنا نصنع الفرق معاً.</h3>
                 <div className="services-conr" style={{ direction: 'ltr' }}>
                     {
                         loading ? <Loading /> :
@@ -77,7 +78,7 @@ export default function About() {
                                 className="option"
                             >
                                 {data.map((item, index) =>
-                                    <SwiperSlide key={index}>
+                                    <SwiperSlide key={index} style={{ order: index }}>
                                         <motion.div
                                             initial={{ y: 100, opacity: 0, }}
                                             whileInView={{ y: 0, opacity: 1, }}
@@ -95,7 +96,7 @@ export default function About() {
                                             <div className="text">
                                                 <h2>{item.title}</h2>
                                                 <p>{item.description}</p>
-                                                <Link href={`/service?id=${item.id}`} className="btn"><span>اعرف اكتر </span> <i className="fa-solid fa-chevron-left"></i></Link>
+                                                <Link href={`/service?id=${item.id}`} className="btn"><span>إعرف المزيد </span> <i className="fa-solid fa-chevron-left"></i></Link>
                                             </div>
                                         </motion.div>
                                     </SwiperSlide>

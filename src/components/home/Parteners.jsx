@@ -39,7 +39,8 @@ export default function Parteners() {
             <div className="container  m-auto" >
                 
                 <div className="nums">
-                    <h3> ارقام عملائنا </h3>
+                    <h3> أرقامنا .. </h3>
+                    <h4>منذ تأسيسنا ونحن نصنع الفرق... إليك أرقام الآلاء التي تتحدث عن نفسها!</h4>
                     {
                         loading ? <Loading /> :
                             <div className="numbers-cont">

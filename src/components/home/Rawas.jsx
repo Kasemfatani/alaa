@@ -115,7 +115,7 @@ export default function Rawas() {
                                 </SwiperSlide>
                             </Swiper>
                         </div>
-                        <Link href="https://www.google.com" className="book-link"><span>اعرف اكتر </span> <i className="fa-solid fa-arrow-left"></i></Link>
+                        <Link href="https://www.google.com" className="book-link"><span>إعرف المزيد </span> <i className="fa-solid fa-arrow-left"></i></Link>
                     </div>
                     <div className="logo-rawas">
                         <Image src={logo} alt="rawas" />

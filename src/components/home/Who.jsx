@@ -54,6 +54,8 @@ export default function Who() {
                                     className="l-side">
                                     <h3 className='sec-title'>{data?.title}</h3>
                                     <p className='who-p'>  {data?.description}  </p>
+                                    {/* تحميل الملف التعريفي */}
+                                    <a href={data?.file} className='btn' target="_blank" rel="noopener noreferrer">تحميل الملف التعريفي</a>
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0, x: 200 }}
