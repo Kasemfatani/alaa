@@ -42,40 +42,40 @@ export default function About() {
             <div className="container m-auto" id='services'>
                 <h2>خدماتنا ..</h2>
                 <h3>جاهزون لخدمتك... تواصل معنا ودعنا نصنع الفرق معاً.</h3>
-                <div className="services-conr" style={{ direction: 'ltr' }}>
+                <div className="services-conr" style={{ direction: 'rtl' }}>
                     {
                         loading ? <Loading /> :
-                            <Swiper
-                                slidesPerView={3.1}
-                                spaceBetween={24}
-                                autoplay={false}
-                                dir={'rtl'}
-                                loop={true}
-                                modules={[Autoplay, Navigation, Pagination]}
-                                breakpoints={{
-                                    1400: {
-                                        slidesPerView: 3.1,
-                                    },
-                                    1100: {
-                                        slidesPerView: 3.1,
-                                    },
-                                    767: {
-                                        slidesPerView: 2.5,
-                                    },
-                                    640: {
-                                        slidesPerView: 2.1,
-                                        autoplay: false,
-                                        spaceBetween: 16
-                                    },
-                                    100: {
-                                        slidesPerView: 1.1,
-                                        autoplay: false,
-                                        spaceBetween: 16
-                                    }
-                                }}
-                                viewport={{ once: true }}
-                                className="option"
-                            >
+                        <Swiper
+                        slidesPerView={2}
+                        spaceBetween={32}
+                        autoplay={true}
+                        dir={'rtl'}
+                        loop={false}
+                        modules={[Autoplay, Navigation, Pagination]}
+                        breakpoints={{
+                            1400: {
+                                slidesPerView: 3,
+                            },
+                            1100: {
+                                slidesPerView: 3,
+                            },
+                            767: {
+                                slidesPerView: 2.5,
+                            },
+                            640: {
+                                slidesPerView: 1.5,
+                                autoplay: false,
+                                spaceBetween: 16
+                            },
+                            100: {
+                                slidesPerView: 1,
+                                autoplay: false,
+                                spaceBetween: 16
+                            }
+                        }}
+                        className="option"
+                    >
+                    
                                 {data.map((item, index) =>
                                     <SwiperSlide key={index} style={{ order: index }}>
                                         <motion.div
