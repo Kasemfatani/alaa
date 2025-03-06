@@ -1,13 +1,11 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Input } from '../ui/input';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
 import validator from "validator";
 import { Button } from '@/components/ui/button';
-import { useRouter } from 'next/navigation';
-// import PhnoeInput from 'react-phone-number-input'; // Importing a phone number input component.
 import PhoneInput from 'react-phone-number-input';
 import {
     Form,
@@ -27,20 +25,13 @@ import {
 } from '@/components/ui/select';
 import { motion } from 'framer-motion'; // Importing the motion component from Framer Motion for animations
 import axios from 'axios';
-import Loading from '@/app/loading';
 import { Textarea } from '../ui/textarea';
-import { comment } from 'postcss';
 import { API_BASE_URL } from '@/lib/apiConfig';
-import { Toast } from '../ui/toast';
 import { toast } from "sonner"
 export default function FormPage(props) {
-    // const [loading, setLoading] = useState(true); // State for loading indicator
-    const [data, setData] = useState(null);
-    const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
     const sendPostRequest = async (data) => {
-        const url = 'https://alaa.irfaad.com/api/contact-us';
-        console.log(data);
+        const url = `${API_BASE_URL}/contact-us`;
         const queryParams = {
             customer_name: data?.name,
             customer_mobile: data?.phone,
@@ -56,7 +47,6 @@ export default function FormPage(props) {
                 lang: 'ar',
             },
         }).then(response => {
-            console.log(response);
             const message = response.data?.message || 'Operation successful';
             if (response.status === 200) {
                 // Success toast notification
@@ -80,20 +70,6 @@ export default function FormPage(props) {
             }
         })
     };
-
-    console.log(data);
-    const router = useRouter()
-
-    let setDone = props.setDone;
-    console.log(props);
-    // const [date, setDate] = React.useState<Date>()
-    const [date, setDate] = useState(new Date());
-    const [visited, setVisited] = useState(false);
-    const [captchaa, setCaptchaa] = useState(false);
-    function onChange(value) {
-        setCaptchaa(true);
-        console.log(captchaa);
-    }
     const formSchema = z
         .object({
 
@@ -116,9 +92,8 @@ export default function FormPage(props) {
         },
     });
     const Submit = (data) => {
-        console.log(data);
+        
         sendPostRequest(data);
-
     };
     return (
         // loading ? <div className="w-full"><Loading /> </div> :

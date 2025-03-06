@@ -25,6 +25,8 @@ export default function SingleService() {
         const headers = {
             lang: 'ar', // Change language dynamically based on state
         };
+        //scroll to top
+        window.scrollTo(0, 0);
         axios.get(`${API_BASE_URL}/services/${pathId}/show`
             , {
                 headers: headers,

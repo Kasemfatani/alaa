@@ -36,7 +36,6 @@ export default function Hero() {
             });
 
     }, []);  // Run this effect whenever the `language` changes
-    console.log(data);
 
     return (
         <div className="hero">

@@ -55,7 +55,6 @@ export default function Footer() { // Defining the main functional component nam
             }
         }
     }, [contactData]); // Runs when `contactData` updates
-    console.log(whatsapp);
 
     return (
         <footer id='footer'> {/* Main footer container with padding and background color */}

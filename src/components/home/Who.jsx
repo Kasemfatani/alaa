@@ -33,7 +33,6 @@ export default function Who() {
                 setLoading(false)
             });
     }, []);  // Run this effect whenever the `language` changes
-    console.log(data);
 
     return (
         <>
