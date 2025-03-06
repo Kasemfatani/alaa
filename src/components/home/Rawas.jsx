@@ -53,8 +53,8 @@ export default function Rawas() {
                     <div className="container m-auto">
                         <div className="rawas-cont">
                             <div className="main-side">
-                                <h3>مع رواس تمتع بخدمات الامن والسلامة </h3>
-                                <h4>مع رواس تمتع بخدمات الامن والسلامة </h4>
+                                <h3>{data.title}</h3>
+                                <h4>{data.description}</h4>
                                 <div className="ltr mb-8" style={{ direction: 'ltr' }}>
                                     <Swiper
                                         slidesPerView={2}
