@@ -58,7 +58,8 @@ export default function Parteners() {
                                             className="number" key={index}>
                                             <h2>{item.title}</h2>
                                             <div className="needed">
-                                                <NumberTicker value={item.counter} /> +
+                                                {/* <NumberTicker value={item.counter} /> + */}
+                                                <NumberTicker value={Number(item.counter)>1000000?Number(item.counter)/1000000: Number(item.counter)} /> {Number(item.counter)>1000000? 'مليون': ''} +
                                             </div>
                                             <p>{item.description}</p>
                                         </motion.div>
