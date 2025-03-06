@@ -110,7 +110,7 @@ export default function Rawas() {
                                         }
                                     </Swiper>
                                 </div>
-                                <Link href={`service?id=${data.id}`} className="book-link"><span>إعرف المزيد </span> <i className="fa-solid fa-arrow-left"></i></Link>
+                                <Link href={`service?id=${data.id}`} className="book-link"><span>اعرف المزيد </span> <i className="fa-solid fa-arrow-left"></i></Link>
                             </div>
                             <div className="logo-rawas">
                                 <Image src={logo} alt="rawas" />

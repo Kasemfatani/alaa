@@ -95,7 +95,7 @@ export default function About() {
                                             <div className="text">
                                                 <h2>{item.title}</h2>
                                                 <p>{item.description}</p>
-                                                <Link href={`/service?id=${item.id}`} className="btn"><span>إعرف المزيد </span> <i className="fa-solid fa-chevron-left"></i></Link>
+                                                <Link href={`/service?id=${item.id}`} className="btn"><span>اعرف المزيد </span> <i className="fa-solid fa-chevron-left"></i></Link>
                                             </div>
                                         </motion.div>
                                     </SwiperSlide>
