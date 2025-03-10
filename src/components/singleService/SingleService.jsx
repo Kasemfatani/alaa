@@ -8,15 +8,12 @@ import Image from 'next/image';
 import NumberTicker from '../ui/number-ticker';
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
-import BlurFade from '../ui/blur-fade';
-import img1 from '/public/alalaa.jpg'
-import img2 from '/public/alalaa2.jpg'
-import img3 from '/public/alalaa3.jpg'
+import BlurFade from '../ui/blur-fade'
 
 
 export default function SingleService() {
     const searchParams = useSearchParams()
-    const [pathId, setPathId] = useState(searchParams.get('id'))
+    const pathId = searchParams.get('id')
     const [loading, setLoading] = useState(true); // State for loading indicator
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
@@ -40,8 +37,6 @@ export default function SingleService() {
                 setLoading(false)
             });
     }, []);  // Run this effect whenever the `language` changes
-    console.log(data);
-
     Fancybox.bind("[data-fancybox]", {
         // Your custom options
     });
@@ -67,8 +62,8 @@ export default function SingleService() {
                                 </div>
                             </div>
                             <div className="img-cont">
-                                <Image src={data?.cover} alt="Mazar" width={200} height={200} />
-                                {/* <Image src={img2} alt="Mazar" width={200} height={200} /> */}
+                                <Image src={data?.cover} alt="Alalaa" width={200} height={200} />
+                                {/* <Image src={img2} alt="Alalaa" width={200} height={200} /> */}
                             </div>
                         </div>
                         <div className="gallery">
@@ -79,7 +74,7 @@ export default function SingleService() {
                                         <BlurFade key={img.id} delay={0.25 + idx * 0.05} inView>
                                             <a href={img.image} data-fancybox="gallery">
                                                 <figure>
-                                                    <Image src={img.image} alt="Mazar" width={200} height={200} className="mb-4 size-full rounded-lg object-contain" />
+                                                    <Image src={img.image} alt="Alalaa" width={200} height={200} className="mb-4 size-full rounded-lg object-contain" />
                                                 </figure>
                                             </a>
                                         </BlurFade>

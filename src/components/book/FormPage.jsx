@@ -53,7 +53,6 @@ export default function FormPage(props) {
                 setLoading(false)
             });
     }, []);  // Run this effect whenever the `language` changes
-    console.log(data);
 
     const sendPostRequest = async (data) => {
         const url = `${API_BASE_URL}/contact-us`;
@@ -117,8 +116,6 @@ export default function FormPage(props) {
         },
     });
     const Submit = (data) => {
-        console.log(data);
-
         sendPostRequest(data);
     };
     return (
