@@ -14,6 +14,7 @@ export async function getSeoData() {
     } catch (error) {
       console.error('Error fetching SEO data:', error);
       return null;
+      
     }
   }
   
