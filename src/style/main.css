@@ -2539,6 +2539,7 @@ body {
 @media only screen and (max-width: 767px) {
   .SingleService .single-details .text {
     width: 100%;
+    order: 2;
   }
 }
 .SingleService .single-details .text h2 {
@@ -2557,6 +2558,11 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+}
+@media screen and (max-width: 767px) {
+  .SingleService .single-details .text .counters {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .SingleService .single-details .text .counters .counter {
   padding: 32px 8px;
@@ -2601,6 +2607,7 @@ body {
 @media only screen and (max-width: 767px) {
   .SingleService .single-details .img-cont {
     width: 100%;
+    order: 1;
   }
 }
 .SingleService .gallery h3 {

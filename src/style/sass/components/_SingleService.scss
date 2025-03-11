@@ -23,6 +23,7 @@
 
             @include max-767 {
                 width: 100%;
+                order: 2;
             }
 
             h2 {
@@ -42,6 +43,10 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 gap: 24px;
+                @media screen and (max-width: 767px) {
+                    grid-template-columns: repeat(1, 1fr);
+                    
+                }
                 .counter{
                     padding: 32px 8px;
                     border-radius: 12px;
@@ -85,6 +90,7 @@
             }
             @include max-767 {
                 width: 100%;
+                order: 1;
             }
         }
     }
