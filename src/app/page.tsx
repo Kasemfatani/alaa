@@ -14,8 +14,8 @@ export default function Home() {
     <main>
       <Hero/>
       <Who/>
-      <Vision/>
       <Parteners/>
+      <Vision/>
       <About/>
       <Services/>
       <Rawas />
