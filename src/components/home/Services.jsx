@@ -68,7 +68,7 @@ export default function About() {
                                 spaceBetween: 16
                             },
                             100: {
-                                slidesPerView: 1,
+                                slidesPerView: 1.1,
                                 autoplay: false,
                                 spaceBetween: 16
                             }
