@@ -67,7 +67,7 @@ export default function Footer() { // Defining the main functional component nam
                         <div className="container m-auto" id='footer'>
                             <div className="content">
                                 <div className="logo">
-                                    <Image src={logo} alt="Mazar" width={200} height={200} />
+                                    <Image src={logo} alt="Alalaa" width={200} height={200} />
                                 </div>
                                 <div className="links">
                                     <h3>روابط سريعة</h3>
